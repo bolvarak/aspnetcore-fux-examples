@@ -1,11 +1,9 @@
-using Fux.Config.RedisHelper.Attribute;
-
-namespace Fux.Example.Config.Model
+namespace Fux.Example.Config.Model.Redis
 {
     /// <summary>
     /// This class is an alias class than maintains the settings structure for Redis
     /// </summary>
-    public class RedisConfiguration : Fux.Config.RedisHelper.EnvironmentConnectionSettings
+    public class Configuration : Fux.Config.RedisHelper.EnvironmentConnectionSettings
     {
         /*
          * This class is just an alias, below is an example of what's expected in the environment

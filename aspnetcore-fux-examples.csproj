@@ -5,9 +5,15 @@
     <RootNamespace>Fux.Example</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fux.Core" Version="1.0.9" />
-    <PackageReference Include="Fux.Config" Version="1.0.17" />
-    <PackageReference Include="Fux.Dns" Version="1.0.10" />
+    <PackageReference Include="Fux.Core" Version="1.1.4" />
+    <PackageReference Include="Fux.Config" Version="1.1.3" />
+    <PackageReference Include="Fux.Dns" Version="1.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helper\" />
+    <Folder Include="Helper\Extension\" />
+    <Folder Include="Helper\Extension\Message\" />
+    <Folder Include="Helper\Extension\Exception\" />
   </ItemGroup>
 </Project>

@@ -4,9 +4,9 @@ using Newtonsoft.Json;
 namespace Fux.Example.Config.Model
 {
     /// <summary>
-    /// This class maintains the example structure of a nested object from a Redis key
+    /// This class maintains the example structure of a nested object from an environment, docker secret or redis key
     /// </summary>
-    public class RedisKeyObjectNested
+    public class KeyObjectNested
     {
         /// <summary>
         /// This property contains a DateTime value

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Fux.Example
@@ -7,7 +6,7 @@ namespace Fux.Example
     /// <summary>
     /// This class maintains the ingress into our program
     /// </summary>
-    class Program
+    public static class Program
     {
         /// <summary>
         /// This property contains the JSON serializer settings used throughout the examples
@@ -25,10 +24,14 @@ namespace Fux.Example
         /// <param name="arguments"></param>
         static async Task Main(string[] arguments)
         {
-            // Execute our Hostname example(s)
-            await Dns.Hostname.RunAsync();
-            // Execute our Redis example(s)
-            await Config.Redis.RunAsync();
+            // Execute our Docker secret example(s) asynchronously
+            await Runner.ExecuteAsync<Config.Docker>();
+            // Execute our Environment variable example(s) asynchronously
+            await Runner.ExecuteAsync<Config.Environment>();
+            // Execute our Redis example(s) asynchronously
+            await Runner.ExecuteAsync<Config.Redis>();
+            // Execute our DNS hostname example(s) asynchronously
+            await Runner.ExecuteAsync<Dns.Hostname>();
         }
     }
 }

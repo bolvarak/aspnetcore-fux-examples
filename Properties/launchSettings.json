@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "aspnetcore-fux-examples": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "FUX_EXAMPLE_CONFIG_BOOLEAN": "true",
+        "FUX_EXAMPLE_CONFIG_DOUBLE": "3.142",
+        "FUX_EXAMPLE_CONFIG_INTEGER": "42",
+        "FUX_EXAMPLE_CONFIG_KEY": "Fux.Config.Environment",
+        "FUX_EXAMPLE_CONFIG_KEY_OBJECT": "{\"boolean\":true,\"double\":3.142,\"integer\":42,\"nestedObject\":{\"dateTime\":\"2020-01-01T00:00:00.000Z\",\"guid\":\"00000000-0000-0000-0000-000000000001\"},\"string\":\"I think therefore I am\"}",
+        "FUX_EXAMPLE_CONFIG_STRING": "I think therefore I am"
+      }
+    }
+  }
+}

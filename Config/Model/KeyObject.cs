@@ -1,15 +1,18 @@
-﻿using System;
+﻿using Fux.Config.DockerHelper.Attribute;
+using Fux.Config.EnvironmentHelper.Attribute;
 using Fux.Config.RedisHelper.Attribute;
 using Newtonsoft.Json;
 
 namespace Fux.Example.Config.Model
 {
     /// <summary>
-    /// This class maintains the structure of a JSON serialized Redis object
+    /// This class maintains the structure of a JSON serialized environment variable, docker secret or redis object
     /// </summary>
-    [RedisDatabase(0)]
+    [RedisDatabase(15)]
     [RedisKey("fux-example-config-redis-key-object")]
-    public class RedisKeyObject
+    [EnvironmentVariable("FUX_EXAMPLE_CONFIG_KEY_OBJECT")]
+    [DockerSecretName("fux-example-config-docker-key-object")]
+    public class KeyObject
     {
         /// <summary>
         /// This property contains a boolean value
@@ -36,7 +39,7 @@ namespace Fux.Example.Config.Model
         /// This property contains a nested object
         /// </summary>
         [JsonProperty("nestedObject")]
-        public RedisKeyObjectNested NestedObject { get; set; } = new RedisKeyObjectNested();
+        public KeyObjectNested NestedObject { get; set; } = new KeyObjectNested();
 
         /// <summary>
         /// This property contains a string value
