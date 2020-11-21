@@ -102,7 +102,7 @@ This is one of those bits that I mentioned above that are terrible.  This is tra
 ---
 
 ##### `Fux.Core.Global`
-I just needed a place to stash my ```Newtonsoft.Json.JsonSerializerSettings`. I'm sure I can find other uses for it 
+I just needed a place to stash my `Newtonsoft.Json.JsonSerializerSettings`. I'm sure I can find other uses for it 
 
 ---
 
