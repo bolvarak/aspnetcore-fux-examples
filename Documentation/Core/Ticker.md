@@ -1,0 +1,1 @@
+# `Fux.Core.Ticker` Documentation
