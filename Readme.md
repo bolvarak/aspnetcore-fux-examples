@@ -183,7 +183,7 @@ and Mongo queries.
 ---
 
 ##### `Fux.Data.Mongo`
-This repo and package don't actually exist, but will be created 
+This has to be its own namespace because it attempts to emulate `EntityFrameworkCore`, but with Mongo, lol. 
 
 | Source  | URL                                                                                                            |
 | ------- | -------------------------------------------------------------------------------------------------------------- |
