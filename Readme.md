@@ -1,5 +1,15 @@
 # `Fux` Documentation
 
+---
+
+## `TL;DR`
+`Fux` is a .Net library targeting `net5.0`.  There are some things it does and some things it doesn't.
+It also has a weirdly hilarious and slightly uncouth name.  Check out the examples here to figure out
+how to use the bloody thing because I barely know and the documentation will never reflect it.
+Thanks for coming to my TED talk.
+
+---
+
 [Overview](https://github.com/bolvarak/aspnetcore-fux-examples#Overview)
 * [What the fux...](https://github.com/bolvarak/aspnetcore-fux-examples#What-the-fux...)
 
